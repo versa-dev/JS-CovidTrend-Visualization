@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>chart</title>
+  <!-- this is basic line -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <!-- this is for 3D chart -->
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="https://code.highcharts.com/modules/cylinder.js"></script>
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <br />
+  <br />
+  <input type="file" id="fileUpload" />
+  <input type="button" id="upload" value="Upload" onclick="run()" />
+  <figure class="highcharts-figure">
+    <div id="container"></div>
+    <br/>
+    <br/>
+    <div id="container1"></div>
+    
+  </figure>
+  
+</body>
+
+</html>
+<script src="index.js"></script>
+<script src="3d.js"></script>
+<script>
+  function run(){
+    Upload1()
+    Upload()
+  }
+  
+</script>
